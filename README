@@ -1,0 +1,13 @@
+Name: Eric Melin
+Class: cs354
+Assignment: IA2 Interpreter Assignment #2
+
+*.java are program files.  Interpreter.java contains the main method.
+
+In order to run on onyx enter the command: 
+$ javac *.java
+$ java Interpreter "<Insert Program Here>; <Last statement>"    //Don't use a ';' on the last statement
+
+To run all tests cd into the 'test' folder.  From there run a ./run and all created tests will run.  Test included test general cases such as: comment functionability, multiple statements, prefix unary minus operation, double values, new keywords/operators, statements/expressions, relops, and block tests.  True and False are represented as 1.0 and 0.0.  All code is thoughoutly commented.
+
+Update!  Since I was granted an extension I was actually able to debug my program to figure out what was causing the issues I was having originally.  I had previously made a very simple yet incredibly frustrating mistake that being that for the NodeBooleanExpressions I was parsing each expression before the relop.  It took some long debugging to come across this problem but was very rewarding when I finally came across the correct solution!  All tests work perfectly now and the interpreter should have full functionality discribed in the project discription.  Honestly, even though the project itself was different and rather simple once I understood how the parser and Nodes need to work I still did not enjoy this project.  I spend way too many hours of frustration trying to figure out what bugs were begin creating but I am very glad to now have completed the project correctly!
